@@ -5,24 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finn's sols rng auras</title>
-<meta property="og:image" content="https://raw.githubusercontent.com/finnsgthbthingy/SolsRngAuraDisplayy/refs/heads/main/a.png">
-
-<meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/finnsgthbthingy/SolsRngAuraDisplayy/refs/heads/main/a.png">
-
-
-<meta property="og:title" content="Finns sols rng auras (hi :D)">
-<meta property="og:description" content="yo you should like totally check out my auras">
-
+    <meta property="og:image" content="https://raw.githubusercontent.com/finnsgthbthingy/SolsRngAuraDisplayy/refs/heads/main/a.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/finnsgthbthingy/SolsRngAuraDisplayy/refs/heads/main/a.png">
+    <meta property="og:title" content="Finns sols rng auras (hi :D)">
+    <meta property="og:description" content="yo you should like totally check out my auras">
 
     <link rel="stylesheet" href="animations.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 
     <style>
-
-    @import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Comic+Neue&family=Creepster&family=Playfair+Display&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Denk+One&family=Fondamento&family=Indie+Flower&family=Josefin+Sans&family=Jura&display=swap');
@@ -30,135 +23,136 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Patrick+Hand&family=Permanent+Marker&family=Sarpanch&family=Special+Elite&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Kings:wght@400&display=swap');
-    body {
-        background-color: #0c0c0e;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        overflow: hidden;
-        font-family: 'Sarpanch', sans-serif !important;
-    }
+        
+        body {
+            background-color: #0c000e;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Sarpanch', sans-serif !important;
+            gap: 15px;
+        }
 
+        .credits {
+            color: #ffffff;
+            font-size: 12px;
+            opacity: 0.7;
+            text-align: center;
+            font-family: 'Sarpanch', sans-serif !important;
+        }
 
-    input, select, button, .ui-container, .header-title, .info-box {
-        color: #e0e0e0;
-        font-family: 'Sarpanch', sans-serif !important;
-    }
+        input, select, button, .ui-container, .header-title, .info-box {
+            color: #e0e0e0;
+            font-family: 'Sarpanch', sans-serif !important;
+        }
 
+        .ui-container {
+            width: 920px;
+            height: 520px;
+            background-color: rgba(10, 10, 12, 0.9);
+            border: 2px solid #3a3a42;
+            position: relative;
+            display: flex; 
+            flex-direction: column; 
+            padding: 6px;
+            box-sizing: border-box;
+        }
 
-    .ui-container {
-        width: 920px;
-        height: 520px;
-        background-color: rgba(10, 10, 12, 0.9);
-        border: 2px solid #3a3a42;
-        position: relative;
-        display: flex; /* Kept flex here for column layout */
-        flex-direction: column; /* This keeps your header/content stacked */
-        padding: 6px;
-        box-sizing: border-box;
-    }
+        .ui-container::before, .ui-container::after {
+            content: ''; position: absolute; width: 12px; height: 12px; border: 2px solid #ffffff; pointer-events: none;
+        }
+        .ui-container::before { top: -2px; left: -2px; border-right: none; border-bottom: none; }
+        .ui-container::after { bottom: -2px; right: -2px; border-left: none; border-top: none; }
 
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 8px 0;
+            border-bottom: 2px solid #25252b;
+        }
+        .header-title {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #fff;
+            text-shadow: 0 0 6px rgba(255,255,255,0.4);
+        }
+        .close-btn { position: absolute; right: 15px; font-size: 20px; color: #888; cursor: pointer; }
 
-    .ui-container::before, .ui-container::after {
-        content: ''; position: absolute; width: 12px; height: 12px; border: 2px solid #ffffff; pointer-events: none;
-    }
-    .ui-container::before { top: -2px; left: -2px; border-right: none; border-bottom: none; }
-    .ui-container::after { bottom: -2px; right: -2px; border-left: none; border-top: none; }
+        .content {
+            display: grid;
+            grid-template-columns: 270px 1fr;
+            height: calc(100% - 45px);
+            padding-top: 8px;
+            gap: 12px;
+            overflow: hidden;
+        }
 
-    .header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        padding: 8px 0;
-        border-bottom: 2px solid #25252b;
-    }
-    .header-title {
-        font-size: 22px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        color: #fff;
-        text-shadow: 0 0 6px rgba(255,255,255,0.4);
-    }
-    .close-btn { position: absolute; right: 15px; font-size: 20px; color: #888; cursor: pointer; }
+        .left-panel {
+            width: 270px;
+            display: grid;
+            grid-template-rows: auto auto 1fr; 
+            gap: 10px;
+            border-right: 2px solid #25252b;
+            padding-right: 12px;
+            box-sizing: border-box;
+        }
 
-    .content {
-        display: grid;
-        grid-template-columns: 270px 1fr;
-        height: calc(100% - 45px);
-        padding-top: 8px;
-        gap: 12px;
-        overflow: hidden;
-    }
+        .preview-box {
+            border: 1px solid #444;
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            text-align: center;
+            padding: 5px;
+        }
 
-    .left-panel {
-        width: 270px;
-        display: grid;
-        grid-template-rows: auto auto 1fr; 
-        gap: 10px;
-        border-right: 2px solid #25252b;
-        padding-right: 12px;
-        box-sizing: border-box;
-    }
+        #selected-name { letter-spacing: 1px; }
+        .aura-rarity { font-size: 11px; color: #888; margin-top: 4px; }
 
-    .preview-box {
-        border: 1px solid #444;
-        height: 90px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #000;
-        text-align: center;
-        padding: 5px;
-    }
+        .info-box { font-size: 12px; padding: 10px; border: 1px solid #2d2d35; background: rgba(0,0,0,0.3); }
+        .info-box strong { font-weight: 700; }
 
-    #selected-name { letter-spacing: 1px; }
-    .aura-rarity { font-size: 11px; color: #888; margin-top: 4px; }
+        .right-panel { display: grid; grid-template-rows: auto 1fr; overflow: hidden; }
 
-    .info-box { font-size: 12px; padding: 10px; border: 1px solid #2d2d35; background: rgba(0,0,0,0.3); }
-    .info-box strong { font-weight: 700; }
+        .search-bar { 
+            background: transparent; border: 1px solid #2d2d35; padding: 6px; color: #fff; 
+            font-size: 12px; margin-bottom: 8px; width: 100%; box-sizing: border-box; 
+        }
+        #selected-name span { font-size: inherit !important; }
 
-    .right-panel { display: grid; grid-template-rows: auto 1fr; overflow: hidden; }
+        .inventory-grid {
+            display: grid;
+            grid-template-columns: repeat(8, 68px); 
+            justify-content: center; 
+            gap: 5px;
+            overflow-y: auto;
+            padding-right: 4px;
+            height: 100%;
+            align-content: start;
+        }
 
-    .search-bar { 
-        background: transparent; border: 1px solid #2d2d35; padding: 6px; color: #fff; 
-        font-size: 12px; margin-bottom: 8px; width: 100%; box-sizing: border-box; 
-    }
-    #selected-name span {
-    font-size: inherit !important;
-}
+        .slot {
+            width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;
+            position: relative; box-sizing: border-box; padding: 2px; overflow: hidden;
+            background: rgba(0, 0, 0, 0.7); border: 1px solid #3a3a42; cursor: pointer;
+        }
+        .slot:hover { background: rgba(255,255,255,0.05); }
+        .slot.selected { border: 1px solid #ffffff !important; box-shadow: none !important; }
 
-    .inventory-grid {
-        display: grid;
-        grid-template-columns: repeat(8, 68px); 
-        justify-content: center; 
-        gap: 5px;
-        overflow-y: auto;
-        padding-right: 4px;
-        height: 100%;
-        align-content: start;
-    }
-
-    .slot {
-        width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;
-        position: relative; box-sizing: border-box; padding: 2px; overflow: hidden;
-        background: rgba(0, 0, 0, 0.7); border: 1px solid #3a3a42; cursor: pointer;
-    }
-    .slot:hover { background: rgba(255,255,255,0.05); }
-    .slot.selected { border: 1px solid #ffffff !important; box-shadow: none !important; }
-
-    .grid-item-name { 
-        display: block;
-        width: 100%;
-
-        font-weight: 700; 
-        text-align: center; 
-        white-space: nowrap; 
-    }
-</style>
+        .grid-item-name { 
+            display: block; width: 100%; font-weight: 700; text-align: center; white-space: nowrap; 
+        }
+    </style>
 </head>
 <body>
 
@@ -189,28 +183,25 @@
         </div>
     </div>
 
+    <div class="credits">credits to the sols rng fandom wiki staff/contributors for the animations!</div>
+
     <script>
         const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSszYRD2h--2JgQvbS4D-g3E7M0RAo6T2fBva5_ncdT5N9l46xxUjhz5DkClK5I1R_qmgNtsaDV-F--/pub?output=csv";
-//Now you may be wondering, why is this dumbass chud idiot putting the aura spreadsheet publically?
-// Now do I have an answer for that:
-//  First of all, making it encrypted and private would be unnecessary and painful, 
- // and secondly, it has useless data and most effects are taken from the Sols RNG wiki 
-//  (credits to them, they do their job extremely well.) 
-
-fetch(SHEET_URL + "&nocache=" + new Date().getTime())
-    .then(res => res.text())
-    .then(csv => {
-        const result = Papa.parse(csv, { header: false, skipEmptyLines: true });
-        const formattedData = result.data.map(row => ({
-            Name: row[0],
-            Rolls: row[1],
-            Luck: row[2],
-            Date: row[3],
-            Size: row[4]
-        }));
-        buildGrid(formattedData);
-    })
-    .catch(err => console.error("Error loading CSV:", err));
+        
+        fetch(SHEET_URL + "&nocache=" + new Date().getTime())
+            .then(res => res.text())
+            .then(csv => {
+                const result = Papa.parse(csv, { header: false, skipEmptyLines: true });
+                const formattedData = result.data.map(row => ({
+                    Name: row[0],
+                    Rolls: row[1],
+                    Luck: row[2],
+                    Date: row[3],
+                    Size: row[4]
+                }));
+                buildGrid(formattedData);
+            })
+            .catch(err => console.error("Error loading CSV:", err));
 
         function buildGrid(data) {
             const grid = document.getElementById("inventory");
@@ -221,22 +212,21 @@ fetch(SHEET_URL + "&nocache=" + new Date().getTime())
                 slot.className = "slot"; 
                 slot.innerHTML = `<div class="grid-item-name">${item.Name}</div>`;
 
-slot.onclick = function() {
-    const displayElement = document.getElementById("selected-name");
-    
-
-    displayElement.innerHTML = item.Name;
-    displayElement.style.fontSize = item.Size + "px";
-    
-    document.getElementById("info-rolls").innerText = item.Rolls || "-";
-    document.getElementById("info-luck").innerText = item.Luck || "-";
-    document.getElementById("info-date").innerText = item.Date || "-";
-    
-    document.querySelectorAll('.slot').forEach(el => el.classList.remove('selected'));
-    slot.classList.add('selected');
-};
+                slot.onclick = function() {
+                    const displayElement = document.getElementById("selected-name");
+                    displayElement.innerHTML = item.Name;
+                    displayElement.style.fontSize = item.Size + "px";
+                    
+                    document.getElementById("info-rolls").innerText = item.Rolls || "-";
+                    document.getElementById("info-luck").innerText = item.Luck || "-";
+                    document.getElementById("info-date").innerText = item.Date || "-";
+                    
+                    document.querySelectorAll('.slot').forEach(el => el.classList.remove('selected'));
+                    slot.classList.add('selected');
+                };
                 grid.appendChild(slot);
             });
         }
     </script>
 </body>
+</html>

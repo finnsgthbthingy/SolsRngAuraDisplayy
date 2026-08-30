@@ -265,6 +265,19 @@ body {
 	content: "GLITCH";
 	filter: saturate(2);
 }
+.GlitchRarity::after{
+    animation:
+        NewGlitchFont 2s linear infinite,
+        NewGlitchTextStroke 25s linear infinite,
+        GlitchRarity 3s linear infinite;
+
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: black;
+    background-clip: text;
+    letter-spacing: .15em;
+    content: "1 in 12,210,110";
+    filter: saturate(2);
+}
 
 @keyframes NewGlitchFont{
 	0% {font-family: Jura;}
@@ -350,6 +363,33 @@ body {
 	94.6%{content: "g*Lit%CH";}	
 	98.9%{content: "GLITch^";}	
 	100%{content: "g;lI*TC_H";}	
+}
+@keyframes GlitchRarity{
+    0%{content: "1 iN/12,210,110";}
+    4.3%{content: "1N 12,21O,110";}
+    8.6%{content: "1 i.n 12,210,11O";}
+    12.9%{content: "1|iN 12,2I0,110";}
+    17.2%{content: "1 in 12,210,1I0";}
+    21.5%{content: "1''iN 12,21O,11O}";}
+    25.8%{content: "1 iN+' 12,210,110";}
+    30.1%{content: "1,in 12,2I0,11O";}
+    34.4%{content: "1 i^N 12,210,110";}
+    38.7%{content: "1 iN 12,21O,11O#";}
+    43%{content: "1<(in 12,210,110''";}
+    47.3%{content: "1 i@N 12,2I0,11O'";}
+    51.6%{content: "1 i(N- 12,21O,110";}
+    55.9%{content: "1 in 12,210,110";}
+    60.2%{content: "1}iN>I* 12,21O,11O";}
+    64.5%{content: "1 iN= 12,2I0,110";}
+    68.8%{content: "1 i(N 12,210,11O";}
+    73.1%{content: "1?in 12,21O,110|";}
+    77.4%{content: "1''iN 12,2I0,11O/";}
+    81.7%{content: "1#iN/12,210,110";}
+    86%{content: "1.in| 12,21O,11O&";}
+    90.3%{content: "1in 12,2I0,110";}
+    94.6%{content: "1*iN% 12,210,11O";}
+    98.9%{content: "1 iN 12,21O,110^";}
+    100%{content: "1;iN*12,210,11O";}
 }
 @keyframes PixelRainbow {
 	0% {color: #f8fb65;}

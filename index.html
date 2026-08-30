@@ -221,7 +221,7 @@
                     document.getElementById("info-rolls").innerText = item.Rolls || "-";
                     document.getElementById("info-luck").innerText = item.Luck || "-";
                     document.getElementById("info-date").innerText = item.Date || "-";
-                    document.getElementById("selected-qty").innerText = item.Rarity || "-";
+                    document.getElementById("selected-qty").innerHTML = item.Rarity || "-";
                     
                     document.querySelectorAll('.slot').forEach(el => el.classList.remove('selected'));
                     slot.classList.add('selected');

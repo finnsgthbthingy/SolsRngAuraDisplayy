@@ -197,7 +197,8 @@
                     Rolls: row[1],
                     Luck: row[2],
                     Date: row[3],
-                    Size: row[4]
+                    Size: row[4],
+                    Rarity: row[5]
                 }));
                 buildGrid(formattedData);
             })
@@ -220,6 +221,7 @@
                     document.getElementById("info-rolls").innerText = item.Rolls || "-";
                     document.getElementById("info-luck").innerText = item.Luck || "-";
                     document.getElementById("info-date").innerText = item.Date || "-";
+                    document.getElementById("selected-qty").innerText = item.Rarity || "-";
                     
                     document.querySelectorAll('.slot').forEach(el => el.classList.remove('selected'));
                     slot.classList.add('selected');

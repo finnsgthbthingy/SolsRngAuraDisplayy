@@ -287,7 +287,15 @@ body {
 	content: "GLITCH";
 	filter: saturate(2);
 }
-
+ .GlitchRarity::after{
+	animation: NewGlitchFont 2s linear infinite, NewGlitchTextStroke 25s linear infinite, GlitchRarity 3s linear infinite;
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: black;
+	background-clip: text;
+	letter-spacing: .2em;
+	content: "1 in 12,210,110";
+	filter: saturate(2);
+}
 @keyframes NewGlitchFont{
 	0% {font-family: Jura;}
 	2.17% {font-family: Kalam;}
@@ -373,6 +381,35 @@ body {
 	98.9%{content: "GLITch^";}	
 	100%{content: "g;lI*TC_H";}	
 }
+
+@keyframes GlitchRarity {
+    0% {content: "1 in 12,210,110";}
+    4.3% {content: "1 iN 12,2I0,11O";}
+    8.6% {content: "1 !n 12,21O,1I0";}
+    12.9% {content: "I in 12,2!0,110";}
+    17.2% {content: "1 1n 12,210,11O";}
+    21.5% {content: "1 i# 12,2I0,1!0";}
+    25.8% {content: "1 in I2,210,110";}
+    30.1% {content: "1 !n 12,21O,110";}
+    34.4% {content: "I iN 12,2!0,11O";}
+    38.7% {content: "1 1n 12,210,I10";}
+    43% {content: "1 i/ 12,2I0,110";}
+    47.3% {content: "1 in 12,21O,1!0";}
+    51.6% {content: "I !n 12,210,11O";}
+    55.9% {content: "1 in 12,210,110";}
+    60.2% {content: "1 iN I2,2!0,110";}
+    64.5% {content: "1 1n 12,21O,I10";}
+    68.8% {content: "1 i# 12,210,11O";}
+    73.1% {content: "I in 12,2I0,1!0";}
+    77.4% {content: "1 !n I2,210,110";}
+    81.7% {content: "1 iN 12,2!0,11O";}
+    86% {content: "1 1n 12,21O,110";}
+    90.3% {content: "I i/ 12,210,I10";}
+    94.6% {content: "1 !n 12,2I0,1!0";}
+    98.9% {content: "1 iN 12,21O,11O";}
+    100% {content: "1 in 12,210,110";}
+}
+
 @keyframes PixelRainbow{
 	0% {color: #f8fb65;}
 	1% {color: #f8fb65;}

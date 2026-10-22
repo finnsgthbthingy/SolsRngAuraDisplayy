@@ -19,47 +19,27 @@ body {
 	75%  {background: linear-gradient(357deg, #02070c 25%, #b9bbbe 35%, #000813 40%, #ced0d2 45%, #081521 50%, #ffffff 51%, #999ca0 60%, #f3f5f6 65%, #404c57 78%, #ffffff 80%); -webkit-text-stroke: 1.5px transparent; -webkit-background-clip: text !important; background-clip: text; -webkit-text-fill-color: transparent;}	
 	100% {background: linear-gradient(177deg, #02070c 25%, #b9bbbe 35%, #000813 40%, #ced0d2 45%, #081521 50%, #ffffff 51%, #999ca0 60%, #f3f5f6 65%, #404c57 78%, #ffffff 80%); -webkit-text-stroke: 1.5px transparent; -webkit-background-clip: text !important; background-clip: text; -webkit-text-fill-color: transparent;}	
 }
-@keyframes OppressionGradient {
+@keyframes OppressionGradient{
 	0% {background:linear-gradient(90deg,white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white, black,black,black, white,white,white);}
-	
 	5% {background:linear-gradient(90deg,black,black,black, white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white);}
-	
 	10% {background:linear-gradient(90deg,white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white, white,white,white);}
-	
 	15% {background:linear-gradient(90deg,black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black);}
-	
 	20% {background:linear-gradient(90deg,black,black,black, black,black,black, black,black,black, black,black,black, white,white,white, black,black,black, black,black,black, black,black,black, black,black,black, white,white,white, black,black,black, white,white,white);}
-	
 	25% {background:linear-gradient(90deg,white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, black,white,white, white,white,white);}
-	
 	30% {background:linear-gradient(90deg,black,black,black, black,black,black, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white, white,white,white, black,black,black, white,white,white);}
-	
 	35% {background:linear-gradient(90deg,white,white,white, white,white,white, white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, black,black,black, black,black,black, black,black,black, black,black,black);}
-	
 	40% {background:linear-gradient(90deg,black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white);}
-	
 	45% {background:linear-gradient(90deg,black,black,black, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white);}
-	
 	50% {background:linear-gradient(90deg,white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black);}
-	
 	55% {background:linear-gradient(90deg,black,black,black, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white, black,black,black, white,white,white);}     
-	
 	60% {background:linear-gradient(90deg,black,black,black, white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black);}
-	
 	65% {background:linear-gradient(90deg,white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, black,black,black, white,white,white, black,black,black, black,black,black);}
-	
 	70% {background:linear-gradient(90deg,black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white, black,black,black, white,white,white);}
-	
 	75% {background:linear-gradient(90deg,black,black,black, black,black,black, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black);}
-	
 	80% {background:linear-gradient(90deg,black,black,black, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white);}
-	
 	85% {background:linear-gradient(90deg,black,black,black, black,black,black, black,black,black, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black);}
-	
 	90% {background:linear-gradient(90deg,white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, white,white,white);}
-	
 	95% {background:linear-gradient(90deg,white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, white,white,white);}
-	
 	100% {background:linear-gradient(90deg,black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, black,black,black, white,white,white, black,black,black, black,black,black);}
 }
 @keyframes EquinoxTransitionRework{
@@ -114,7 +94,7 @@ body {
 	100% {transform: scale(1) translateX(-.5px) translateY(-.5px) rotate(-1deg);}	
 }
 
-@keyframes EquinoxSpinAnim {
+@keyframes EquinoxSpinAnim{
   0.00% { background: linear-gradient(0deg, black 50%, white 50%); -webkit-background-clip: text !important; background-clip: text; -webkit-text-fill-color: transparent; }
   0.56% { background: linear-gradient(2deg, black 50%, white 50%); -webkit-background-clip: text !important; background-clip: text; -webkit-text-fill-color: transparent; }
   1.11% { background: linear-gradient(4deg, black 50%, white 50%); -webkit-background-clip: text !important; background-clip: text; -webkit-text-fill-color: transparent; }
@@ -393,7 +373,7 @@ body {
 	98.9%{content: "GLITch^";}	
 	100%{content: "g;lI*TC_H";}	
 }
-@keyframes PixelRainbow {
+@keyframes PixelRainbow{
 	0% {color: #f8fb65;}
 	1% {color: #f8fb65;}
 	2% {color: #f3fa62;}

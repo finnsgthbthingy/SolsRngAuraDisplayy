@@ -19,7 +19,49 @@ body {
 	75%  {background: linear-gradient(357deg, #02070c 25%, #b9bbbe 35%, #000813 40%, #ced0d2 45%, #081521 50%, #ffffff 51%, #999ca0 60%, #f3f5f6 65%, #404c57 78%, #ffffff 80%); -webkit-text-stroke: 1.5px transparent; -webkit-background-clip: text !important; background-clip: text; -webkit-text-fill-color: transparent;}	
 	100% {background: linear-gradient(177deg, #02070c 25%, #b9bbbe 35%, #000813 40%, #ced0d2 45%, #081521 50%, #ffffff 51%, #999ca0 60%, #f3f5f6 65%, #404c57 78%, #ffffff 80%); -webkit-text-stroke: 1.5px transparent; -webkit-background-clip: text !important; background-clip: text; -webkit-text-fill-color: transparent;}	
 }
-
+@keyframes OppressionGradient {
+	0% {background:linear-gradient(90deg,white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white, black,black,black, white,white,white);}
+	
+	5% {background:linear-gradient(90deg,black,black,black, white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white);}
+	
+	10% {background:linear-gradient(90deg,white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white, white,white,white);}
+	
+	15% {background:linear-gradient(90deg,black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black);}
+	
+	20% {background:linear-gradient(90deg,black,black,black, black,black,black, black,black,black, black,black,black, white,white,white, black,black,black, black,black,black, black,black,black, black,black,black, white,white,white, black,black,black, white,white,white);}
+	
+	25% {background:linear-gradient(90deg,white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, black,white,white, white,white,white);}
+	
+	30% {background:linear-gradient(90deg,black,black,black, black,black,black, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white, white,white,white, black,black,black, white,white,white);}
+	
+	35% {background:linear-gradient(90deg,white,white,white, white,white,white, white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, black,black,black, black,black,black, black,black,black, black,black,black);}
+	
+	40% {background:linear-gradient(90deg,black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white);}
+	
+	45% {background:linear-gradient(90deg,black,black,black, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white);}
+	
+	50% {background:linear-gradient(90deg,white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black);}
+	
+	55% {background:linear-gradient(90deg,black,black,black, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white, black,black,black, white,white,white);}     
+	
+	60% {background:linear-gradient(90deg,black,black,black, white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black);}
+	
+	65% {background:linear-gradient(90deg,white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, black,black,black, white,white,white, black,black,black, black,black,black);}
+	
+	70% {background:linear-gradient(90deg,black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, white,white,white, white,white,white, black,black,black, white,white,white);}
+	
+	75% {background:linear-gradient(90deg,black,black,black, black,black,black, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black);}
+	
+	80% {background:linear-gradient(90deg,black,black,black, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white);}
+	
+	85% {background:linear-gradient(90deg,black,black,black, black,black,black, black,black,black, black,black,black, white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black);}
+	
+	90% {background:linear-gradient(90deg,white,white,white, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, white,white,white);}
+	
+	95% {background:linear-gradient(90deg,white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, white,white,white, white,white,white);}
+	
+	100% {background:linear-gradient(90deg,black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, white,white,white, black,black,black, black,black,black, black,black,black, white,white,white, black,black,black, black,black,black);}
+}
 @keyframes EquinoxTransitionRework{
 	0% {color: rgb(255 255 255/0%); -webkit-text-stroke: 1.5px rgb(255 255 255 0%);}
 	7% {color: rgb(255 255 255/0%); -webkit-text-stroke: 1.5px rgb(255 255 255 0%);}	
@@ -265,19 +307,6 @@ body {
 	content: "GLITCH";
 	filter: saturate(2);
 }
-.GlitchRarity::after{
-    animation:
-        NewGlitchFont 2s linear infinite,
-        NewGlitchTextStroke 25s linear infinite,
-        GlitchRarity 3s linear infinite;
-
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: black;
-    background-clip: text;
-    letter-spacing: .15em;
-    content: "1 in 12,210,110";
-    filter: saturate(2);
-}
 
 @keyframes NewGlitchFont{
 	0% {font-family: Jura;}
@@ -363,33 +392,6 @@ body {
 	94.6%{content: "g*Lit%CH";}	
 	98.9%{content: "GLITch^";}	
 	100%{content: "g;lI*TC_H";}	
-}
-@keyframes GlitchRarity{
-    0%{content: "1 iN/12,210,110";}
-    4.3%{content: "1N 12,21O,110";}
-    8.6%{content: "1 i.n 12,210,11O";}
-    12.9%{content: "1|iN 12,2I0,110";}
-    17.2%{content: "1 in 12,210,1I0";}
-    21.5%{content: "1''iN 12,21O,11O}";}
-    25.8%{content: "1 iN+' 12,210,110";}
-    30.1%{content: "1,in 12,2I0,11O";}
-    34.4%{content: "1 i^N 12,210,110";}
-    38.7%{content: "1 iN 12,21O,11O#";}
-    43%{content: "1<(in 12,210,110''";}
-    47.3%{content: "1 i@N 12,2I0,11O'";}
-    51.6%{content: "1 i(N- 12,21O,110";}
-    55.9%{content: "1 in 12,210,110";}
-    60.2%{content: "1}iN>I* 12,21O,11O";}
-    64.5%{content: "1 iN= 12,2I0,110";}
-    68.8%{content: "1 i(N 12,210,11O";}
-    73.1%{content: "1?in 12,21O,110|";}
-    77.4%{content: "1''iN 12,2I0,11O/";}
-    81.7%{content: "1#iN/12,210,110";}
-    86%{content: "1.in| 12,21O,11O&";}
-    90.3%{content: "1in 12,2I0,110";}
-    94.6%{content: "1*iN% 12,210,11O";}
-    98.9%{content: "1 iN 12,21O,110^";}
-    100%{content: "1;iN*12,210,11O";}
 }
 @keyframes PixelRainbow {
 	0% {color: #f8fb65;}
